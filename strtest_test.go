@@ -29,7 +29,7 @@ var cities = []string{
 }
 
 func TestVictor(t *testing.T) {
-	db, err := sql.Open("mysql", "utest:paswd123@tcp(10.128.23.41:3306)/dbtest")
+	db, err := sql.Open("mysql", "username:password@tcp(localhost:3306)/dbtest")
 	if err != nil {
 		log.Fatal(err)
 
